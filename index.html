@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sliding Puzzle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="glass-card">
+    <h1>🧩 Sliding Puzzle</h1>
+
+    <div id="preview-container">
+      <img id="preview" src="" alt="Preview Image">
+    </div>
+
+
+    <div class="controls">
+      <input type="file" id="upload" accept="image/*" />
+      <button onclick="loadRandomImage()">Random Image</button>
+      <select id="difficulty">
+        <option value="3">3 x 3</option>
+        <option value="4" selected>4 x 4</option>
+        <option value="5">5 x 5</option>
+      </select>
+      <button onclick="startPuzzle()">Start Puzzle</button>
+    </div>
+
+    <canvas id="puzzleCanvas" width="600" height="600"></canvas>
+    <div id="message"></div>
+  </div>
+  <div class="footer">Made with ❤️ by Hamza</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
